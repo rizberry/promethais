@@ -1,0 +1,62 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e6e6e6; /* Page background color */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+main {
+    margin-top: 125px; /* Adjust this value based on the height of your header */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-module {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    margin-bottom: 20px;
+    background-color: #ffffff; /* Card background color */
+    padding: 15px; /* Spacing inside the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle drop shadow */
+    border-radius: 5px; /* Rounded corners for the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow properties */
+}
+
+.image-module:hover {
+    transform: translateY(-1px); /* Slightly elevate the card on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.65); /* Increase the shadow depth to give the elevated effect */
+}
+
+.image-module img {
+    margin-right: 10px;
+    width: 150px; /* Keeping image size consistent */
+    height: auto;
+    border-radius: 5px; /* Optionally round the corners of the image too */
+}
+
+.image-module p {
+    margin: 0;
+    margin-left: 1vw;
+    flex: 1; /* To ensure the description occupies remaining space */
+}
