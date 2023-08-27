@@ -21,9 +21,30 @@ header {
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
     z-index: 1000;
 }
+header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 2em;  /* Adjust the font size as needed */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header hr {
+    width: 30vh;  /* Adjust the width as needed */
+    margin: 5px auto;
+    border: 1px solid rgb(199, 199, 199);
+}
+
+header p {
+    margin: 0;
+    padding-top: 10px;
+    font-size: 1em;  /* Adjust the font size as needed */
+    padding-bottom: 10px;
+}
+
 
 main {
-    margin-top: 125px; /* Adjust this value based on the height of your header */
+    margin-top: 175px; /* Adjust this value based on the height of your header */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -59,4 +80,50 @@ main {
     margin: 0;
     margin-left: 1vw;
     flex: 1; /* To ensure the description occupies remaining space */
+}
+
+.text-module {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 75vw;
+    margin-bottom: 20px;
+    background-color: #ffffff; /* Card background color */
+    padding: 15px; /* Spacing inside the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle drop shadow */
+    border-radius: 5px; /* Rounded corners for the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow properties */
+}
+
+.text-module:hover {
+    transform: translateY(-1px); /* Slightly elevate the card on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.65); /* Increase the shadow depth to give the elevated effect */
+}
+
+.text-module h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em; /* Adjust based on preference */
+    margin-bottom: 10px; /* Add some space below the title */
+}
+
+.text-module a {
+    color: #337ab7; /* Adjust color based on preference */
+    text-decoration: none;
+}
+
+.text-module a:hover {
+    text-decoration: underline;
+}
+
+.text-module ul {
+    list-style-type: disc; /* This creates the standard bullet point */
+    padding-left: 1em; /* This gives some spacing before the bullet point */
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.text-module li {
+    margin-bottom: 5px; /* Add some space between each bullet point */
 }
