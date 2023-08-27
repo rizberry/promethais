@@ -34,7 +34,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 800px;
+    width: 75vw;
     margin-bottom: 20px;
     background-color: #ffffff; /* Card background color */
     padding: 15px; /* Spacing inside the card */
