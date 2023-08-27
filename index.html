@@ -13,36 +13,42 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="./style.css">
-
+    <script src="./script.js"></script>
     <title>Promethais</title>
     
 </head>
-<body>
+<body onload="changeClass();">
     <header>
-        <h1>B2B Chatbots</h1>
+        <h1>Promethais</h1>
+        <hr>
+        <p>Enterprise AI Frameworks</p>
     </header>
+    
     <main>
-        <section class="image-module">
+        <!-- Image Module -->
+        <!-- <section class="image-module">
             <img src="https://via.placeholder.com/150" alt="Description 1">
             <p>This is the description for the first image.</p>
+        </section> -->
+    
+        <!-- Service Module -->
+        <section id="mainModule" class="text-module">
+            <h2>Services</h2>
+            <ul>
+                <li>LLM-Powered Chatbots</li>
+                <li>Chatbots with natural language processing to retain customers and cut costs</li>
+            </ul>
+            <h2 id="contactUsHeader">Contact us</h2>
+            <a href="mailto:ethan.earl@promethais.com">ethan.earl@promethais.com</a>
         </section>
-        <section class="image-module">
-            <img src="https://via.placeholder.com/150" alt="Description 2">
-            <p>This is the description for the second image.</p>
-        </section>
-        <section class="image-module">
-            <img src="https://via.placeholder.com/150" alt="Description 3">
-            <p>This is the description for the third image.</p>
-        </section>
-        <section class="image-module">
-            <img src="https://via.placeholder.com/150" alt="Description 4">
-            <p>This is the description for the fourth image.</p>
-        </section>
-        <section class="image-module">
-            <img src="https://via.placeholder.com/150" alt="Description 5">
-            <p>This is the description for the fifth image.</p>
-        </section>
+            <canvas id="stars"></canvas>
+       
     </main>
+
+    
+
+    <script src="./background.js"></script>
+    
 
 </body>
 </html>
