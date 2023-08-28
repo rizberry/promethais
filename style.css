@@ -38,13 +38,20 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #E9131D;
+    background-color: #70090E;
     color: white;
     text-align: center;
     padding: 10px 0;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
     z-index: 1000;
+    font-family: 'Abril Fatface', cursive;
 }
+
+header span{ /* ai text in the header */
+    color: #ffec81;
+    text-shadow: #7c6a00 0px 0px 10px;
+}
+
 header h1 {
     margin: 0;
     padding: 0;
@@ -52,7 +59,8 @@ header h1 {
     padding-top: 10px;
     padding-bottom: 10px;
     color: #ffec81;
-    text-shadow: #ffd900 3px 3px 5px;
+    text-shadow: #ffd900 0px 0px 10px;
+    font-size: xxx-large;
 }
 
 header hr {
@@ -64,10 +72,10 @@ header hr {
 header p {
     margin: 0;
     padding-top: 10px;
-    font-size: 1em;  /* Adjust the font size as needed */
+    font-size:large;  /* Adjust the font size as needed */
     padding-bottom: 10px;
     color: #ffec81;
-    text-shadow: #ffd900 3px 3px 5px;
+    text-shadow: #ffd900 0px 0px 3px;
 }
 
 #contactUsHeader{
@@ -113,6 +121,8 @@ main {
     flex: 1; /* To ensure the description occupies remaining space */
 }
 
+/* h2 li a */
+
 .text-module {
     margin: 50px;
     display: flex;
@@ -121,12 +131,14 @@ main {
     justify-content: center;
     width: auto;
     margin-bottom: 20px;
-    background-color: #ffffff; /* Card background color */
+    background-color: #e9131e7b; /* Card background color */
     padding: 15px; /* Spacing inside the card */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle drop shadow */
     border-radius: 5px; /* Rounded corners for the card */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow properties */
     margin-top: 75px;
+    /* opacity: 0.65; */
+    color: white;
 }
 
 .text-module-mobile {
@@ -136,7 +148,7 @@ main {
     justify-content: center;
     width: 75vw;
     margin-bottom: 20px;
-    background-color: #ffffff; /* Card background color */
+    background-color: #E9131D; /* Card background color */
     padding: 15px; /* Spacing inside the card */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle drop shadow */
     border-radius: 5px; /* Rounded corners for the card */
@@ -176,3 +188,7 @@ main {
     margin-bottom: 5px; /* Add some space between each bullet point */
 }
 
+.text-module a{
+    color: white;
+    text-decoration: underline;
+}
