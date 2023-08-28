@@ -6,7 +6,7 @@ let screen, stars, params = {speed: 2, number: 300, extinction: 4};
 setupStars();
 updateStars();
 
-params.speed = 0.5;
+params.speed = 0.25;
 
 // update stars on resize to keep the thing centered
 window.onresize = function () {
@@ -59,7 +59,7 @@ function setupStars() {
 }
 
 function updateStars() {
-    ctx.fillStyle = "#140000";
+    ctx.fillStyle = "#000";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     stars.forEach(function (s) {
         s.show();
